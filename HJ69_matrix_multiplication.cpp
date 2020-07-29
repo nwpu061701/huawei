@@ -44,6 +44,8 @@ int main()
                     mult += array1[i][k]*array2[k][j];
                 }
                 
+				cout<<mult<<" ";  //没考虑每行最后不输出空格，也能过
+				/*
                 if(z-1==j)
                 {
                     cout<<mult<<endl;
@@ -52,7 +54,9 @@ int main()
                 {
                     cout<<mult<<" ";
                 }
+				*/
             }
+			cout<<endl;
         }
     }
 }
