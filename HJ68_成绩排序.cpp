@@ -4,6 +4,10 @@
 #include<vector>
 using namespace std;
 
+//本题使用 桶排序，是个很快速的方法。桶排序，利用函数的映射关系，减少了几乎所有的比较工作。
+//桶排序，把大量数据分成了基本有序的数据块（桶），然后只需要对桶中的数据做先进先出的比较排序即可。
+
+
 class student{
 public:
     string name;
