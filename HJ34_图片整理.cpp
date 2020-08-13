@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<cstring>
 
-//方法：桶排序
+//方法：桶排序  
 
 int num[128]={0};
 
