@@ -70,7 +70,7 @@ void transform(string & str)
      sort(tempstr1.begin(), tempstr1.end());
      sort(tempstr2.begin(), tempstr2.end());
      
-     transform(tempstr1);
+     transform(tempstr1);//这里如果用for_each算法，应该如何去实现呢？参见HJ36_字符串加密
      transform(tempstr2);
      
      int combinedLength = combined.length();
