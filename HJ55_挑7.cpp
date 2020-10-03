@@ -14,7 +14,7 @@ bool isConcerned7(int num)
     }
     else
     {
-        string temp = to_string(num);//注意，是to_string，而不是itostring
+        string temp = to_string(num);//注意，是to_string，而不是itostring 
         
         if(string::npos != temp.find('7'))
         {
