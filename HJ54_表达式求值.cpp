@@ -13,6 +13,14 @@ using namespace std;
 //思路，先求后缀表达式，再用后缀表达式求值。代码还是有些场，200行了
 
 /*
+char转string，不要用to_string(参数)，因为这个调用的是to_string(int)，会把char当做一个整数，翻译做数字
+              要用string(1,char)，或者string={char}，都是调用string的构造函数，直接生成一个string
+
+使用stringstream>>int>>string;//这个语句中，如果向int输入后，stringstream中不存在其他东西后，string将仍然保持原来的值，不会被清空。
+              所以，循环输入的时候，需要清空int、string，否则无法知道int或者string中是否是新输入的数据
+*/
+
+/*
 bool isOperator(char c)
 {
     if('+'==c || '-'==c ||'*'==c ||'/'==c)
