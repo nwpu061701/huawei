@@ -116,7 +116,12 @@ void ConvertToEgpytFract1(const string& str)
         }
 
     }
-    
+    //如果没有约分，也不行
+    if (b%a == 0)
+    {
+        b = b / a;
+        a = 1;
+    }
 
      result +="1/"+to_string(b/a);
     cout<<result<<endl;
@@ -128,6 +133,6 @@ int main()
     string str;
     while(cin>>str)
     {
-        ConvertRealFractToEgpytFract(str);
+        ConvertToEgpytFract1(str);
     }
 }
