@@ -49,6 +49,11 @@ unsigned short 16bit
 HJ28_素数伴侣
 //20201009 16:03-16:42(看讨论，图匈牙利算法，有点儿难)
 **************************
+HJ41 称砝码
+set拥有与list相同的某些性质：当客户端对其进行元素新增或删除操作时，操作之前的所有迭代器，在操作完成后，
+依然有效，当然，被删除元素的迭代器必然是个例外。
+
+**************************
 HJ42 学英语
  输出格式自验方法（是否多输出了一个结尾的空格）：将空格改为“|”输出
  
@@ -110,7 +115,18 @@ HJ56    iNOC产品部--完全数计算
 另外一种思路，欧拉公式：如果i是质数，2^i-1也是质数，那么（2^i-1）*2^(i-1)就是完全数。
 ***********************************************
 HJ58 堆排序
-
+make_heap(begin,end, cmp);
+pop_heap(begin,end, cmp);//将最大值移动到heap末尾, cmp应与make_heap中的额cmp相同
+push_heap(begin,end,cmp)//将末尾的元素纳入到heap中, cmp应与make_heap中的额cmp相同
+sort_heap(heap, heap+out_num,cmp);//按照heap的cmp对heap排序，排序后，会失去heap的属性; cmp应与make_heap中的额cmp相同
+**********************************************
+HJ67 24点运算
+    next_permutation是从sort结果后的全排列
+    next_permutation(first, last , comp)，返回为true，表示成功获得下一个全排列，返回false，表示全排列已经全部遍历完毕
+    next_permutation头文件是numeric
+***********************************************
+HJ71 字符串通配符
+头文件是#include<sstream>，而不是<stringstream>
 ***********************************************
 HJ79 计算字符串相似度
 内建类型转字符串是to_string，而不是tostring
